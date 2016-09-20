@@ -1,17 +1,4 @@
-/**
-#include<iostream>
-#include<string>
-#include<vector>
-using namespace std;
-**/
-:set paste
-set pastetoggle=<F2>
-/**
-#include<iostream>
-#include<string>
-#include<vector>
-using namespace std;
-**/
+```c++
 
 class Solution {
 public:
@@ -33,3 +20,19 @@ public:
 	}
 	
 };
+
+
+/**
+ * int main()
+{
+
+	vector<int> num_array = {1,2,3,3,4,4,7,7};
+	Solution s;
+	
+    cout << s.removeDuplicates(num_array);
+	for (unsigned int i = 0; i < num_array.size(); i++)
+		cout << num_array[i] << endl;
+	return 0;
+}
+**/
+```
