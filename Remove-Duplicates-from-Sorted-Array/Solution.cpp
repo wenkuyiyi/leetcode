@@ -1,3 +1,4 @@
+set pastetoggle=<F2> 
 /**
 #include<iostream>
 #include<string>
