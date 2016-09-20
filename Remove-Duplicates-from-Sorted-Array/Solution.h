@@ -4,15 +4,23 @@
 #include<vector>
 using namespace std;
 **/
+:set paste
+set pastetoggle=<F2>
+/**
+#include<iostream>
+#include<string>
+#include<vector>
+using namespace std;
+**/
 
 class Solution {
 public:
 	int removeDuplicates(vector<int>& nums) {
-	    if(nums.size() == 0)    return 0;   //±ØÐë¿¼ÂÇ³¤¶ÈÎª0µÄÇé¿ö
+	    if(nums.size() == 0)    return 0;   //å¿…é¡»è€ƒè™‘é•¿åº¦ä¸º0çš„æƒ…å†µ
 	    
 		int news = 0;
-		unsigned int sized = nums.size();   // vsÉÏ<vector>size()·µ»ØÖµ±ØÐëÎªunsighed int£»
-		for (unsigned int j = 1; j < nums.size(); j++)   // i,jµÄ±éÀú
+		unsigned int sized = nums.size();   // vsä¸Š<vector>size()è¿”å›žå€¼å¿…é¡»ä¸ºunsighed intï¼›
+		for (unsigned int j = 1; j < nums.size(); j++)   // i,jçš„éåŽ†
 			if (nums[j] != nums[j - 1])
 			{
 				nums[news+1] = nums[j];
@@ -25,18 +33,3 @@ public:
 	}
 	
 };
-
-
-/**
- * int main()
-{
-
-	vector<int> num_array = {1,2,3,3,4,4,7,7};
-	Solution s;
-	
-    cout << s.removeDuplicates(num_array);
-	for (unsigned int i = 0; i < num_array.size(); i++)
-		cout << num_array[i] << endl;
-	return 0;
-}
-**/
