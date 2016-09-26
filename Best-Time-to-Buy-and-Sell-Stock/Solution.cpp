@@ -1,4 +1,4 @@
-class Solution {
+class Solution {                       // 6ms 100%
 public:
     int maxProfit(vector<int>& prices) {
         int len = prices.size();
