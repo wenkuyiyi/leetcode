@@ -11,4 +11,5 @@
   return [0, 1].
 ```
 ----
-* 思路：建一个unordered_map, 把target-nums[i]放入，则在遍历完数组前一定有一个数在map里。
+* 思路：建一个unordered_map, 把target-nums[i]放入，则在遍历完数组前一定有一个数在map里。  
+       还有个思路是两数组往中间逼近。
